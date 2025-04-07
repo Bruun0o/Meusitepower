@@ -1,16 +1,48 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 20px;
-    }
-    input, button {
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/montanas-minimalista-arte-low-poly-3354.webp');
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.181); /* Fundo semi-transparente para melhor legibilidade */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%; /* Para garantir que o container não exceda a largura da tela */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+}
+
+input, button {
     padding: 10px;
     margin: 5px;
     font-size: 16px;
-    }
-    /* 📌 Responsividade para telas menores */
-    @media (max-width: 600px) {
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745; /* Cor verde para o botão */
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838; /* Cor verde mais escura ao passar o mouse */
+}
+
+/* 📌 Responsividade para telas menores */
+@media (max-width: 600px) {
     input, button {
-    width: 100%;
+        width: 100%;
     }
-    }
+}
